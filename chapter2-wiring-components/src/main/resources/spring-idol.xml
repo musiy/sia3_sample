@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="duke" class="com.musiy.comps.Juggler"/>
+
+    <bean id="poem" class="com.musiy.comps.EvgeniyOnegin"/>
+
+    <bean id="poeticDuke" class="com.musiy.comps.PoeticJuggler">
+        <constructor-arg value="7"/>
+        <constructor-arg ref="poem"/>
+    </bean>
+
+</beans>
